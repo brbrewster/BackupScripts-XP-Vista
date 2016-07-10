@@ -7,7 +7,7 @@ I haven't tried them on newer versions of Windows, so I don't know if they will 
 ---
 
 
-<em>FullBackup.bat<em> copies files from a user's Desktop, Documents/My Documents folder, Firefox profile data, Internet Explorer Favorites, and Outlook data files (PST files).
+<strong>FullBackup.bat</strong> copies files from a user's Desktop, Documents/My Documents folder, Firefox profile data, Internet Explorer Favorites, and Outlook data files (PST files).
  
 To make it easy to backup to any logical drive, the user is prompted to enter the letter of the logical drive that files are being backed up to.
 
@@ -17,10 +17,10 @@ Instead of simply overwriting the backup PST it attempts to keep a rotating set 
 
 FullBackup.bat overwrites existing files each time it is used, so it should not be used for recurring backups. If recurring backups are needed, use IncrementalBackup.bat
 
-<em>IncrementalBackup.bat</em> does basically the same thing that FullBackup.bat does, except it only backs up files that have changed since the last time the backup scripts have run.
+<strong>IncrementalBackup.bat</strong> does basically the same thing that FullBackup.bat does, except it only backs up files that have changed since the last time the backup scripts have run.
 
 It is also intended to be run as a scheduled task, so the backup drive letter is set within the script, rather than prompting the user for backup drive letter.
 
-<em>PSTBackup.bat</em> is functionally the same as the PST backup portion of the other two scripts, except that it relies on a named Windows network or Samba share instead of a drive letter, because I was running into some hiccups with mapped drives at the time.
+<strong>PSTBackup.bat</strong> is functionally the same as the PST backup portion of the other two scripts, except that it relies on a named Windows network or Samba share instead of a drive letter, because I was running into some hiccups with mapped drives at the time.
 
 This is also intended to be run as a scheduled task.
